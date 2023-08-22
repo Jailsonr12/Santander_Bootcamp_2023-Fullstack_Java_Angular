@@ -1,0 +1,58 @@
+body {
+  background: #f0f0f0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  max-width: 900px;
+  margin: auto;
+}
+
+#title,
+.subtitle,
+.posttitle {
+  color: rgb(34, 34, 34);
+}
+
+#title {
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: line-through;
+  color: #272525;
+}
+.posttitle {
+  font-size: 16px;
+  font-style: italic;
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.post {
+  background: #fff;
+  padding: 10px;
+  border: 3px solid rgb(91, 90, 97);
+  margin: 10px;
+  border-radius: 5px;
+}
+.postContente {
+  margin: 0;
+  margin-bottom: 15px;
+  text-transform: capitalize;
+  text-align: justify;
+}
+.postImg {
+  margin: 0;
+  margin-bottom: 15px;
+}
+.photo {
+  border: 1px solid #272525;
+  border-radius: 50%;
+}
+.constactList {
+  list-style-type: none;
+  padding-left: 15px;
+}
+.constactList li a {
+  color: blue;
+  text-decoration: none;
+}
