@@ -16,3 +16,14 @@ body {
 .content h1 {
   margin: 0;
 }
+.modalDetais {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 50%; /* Ajuste a largura conforme necessário */
+  height: 50%; /* Ajuste a altura conforme necessário */
+  z-index: 999; /* Valor alto para garantir que fique na frente de tudo */
+}

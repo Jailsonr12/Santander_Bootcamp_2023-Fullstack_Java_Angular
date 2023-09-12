@@ -9,7 +9,8 @@ function loadPokemonItens(offset, limit) {
     const newHtml = pokemons
       .map((pokemon) => {
         return `
-      <li class="pokemon ${pokemon.type}">
+       
+  <li onclick="openModal()" class="pokemon ${pokemon.type} buttonDetails" >
           <span class="number">#${pokemon.number}</span>
           <span class="name">${pokemon.name}</span>
   
@@ -19,10 +20,12 @@ function loadPokemonItens(offset, limit) {
                 .map((type) => `<li class="type ${type}">${type}</li>`)
                 .join("")}
             </ol>
-            <img src="${pokemon.photo}"
+           
+            <img  src="${pokemon.photo}"
               alt="${pokemon.name}"/>
           </div>
         </li>
+        
       `;
       })
       .join("");
@@ -44,3 +47,11 @@ loadMoreButton.addEventListener("click", () => {
     loadPokemonItens(offset, limit);
   }
 });
+
+function details(){
+  
+}
+function openModal(){
+  details()
+}
+
