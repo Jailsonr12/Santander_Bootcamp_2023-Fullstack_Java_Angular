@@ -11,7 +11,9 @@ function loadPokemonItens(offset, limit) {
       .map((pokemon) => {
         return `
        
-  <li data-pokemon='${JSON.stringify(pokemon)}' onclick="openModal(this)"class="pokemon ${pokemon.type} buttonDetails" >
+  <li data-pokemon='${JSON.stringify(
+    pokemon
+  )}' onclick="openModal(this)"class="pokemon ${pokemon.type} buttonDetails" >
           <span class="number">#${pokemon.number}</span>
           <span class="name">${pokemon.name}</span>
   
@@ -49,9 +51,10 @@ loadMoreButton.addEventListener("click", () => {
   }
 });
 function openModal(element) {
+  console.log("aaaaaaaaaa");
   const pokemonJSON = element.getAttribute("data-pokemon");
   const pokemon = JSON.parse(pokemonJSON);
-  console.log("openModal called")
+  console.log("openModal called");
   const modalContent = `
   <div class="modalDetais ${pokemon.type}">
   <div class="modalTitle">
@@ -72,16 +75,10 @@ function openModal(element) {
     </ol>
   </div>
 </div>
-
   `;
-
-  // Set the modal content
   modalInser.innerHTML = modalContent;
-
-  // Show the modal
   modalInser.style.display = "flex";
 }
-
 
 function closeModal() {
   modalInser.style.display = "none";
