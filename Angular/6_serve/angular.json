@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "5_rotas": {
+    "6_serve": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/5_rotas",
+            "outputPath": "dist/6_serve",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -64,10 +64,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "5_rotas:build:production"
+              "browserTarget": "6_serve:build:production"
             },
             "development": {
-              "browserTarget": "5_rotas:build:development"
+              "browserTarget": "6_serve:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -75,7 +75,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "5_rotas:build"
+            "browserTarget": "6_serve:build"
           }
         },
         "test": {
