@@ -19,7 +19,6 @@ public class Desafio19 {
 		Integer soma5 = numeros.stream().filter(n -> n % 5 == 0).reduce(0, Integer::sum);
 
 		System.out.println(soma5);
-
+	
 	}
-
 }
