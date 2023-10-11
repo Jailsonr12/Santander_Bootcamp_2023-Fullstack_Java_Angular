@@ -5,39 +5,115 @@ import java.util.Scanner;
 
 public class Desafio {
 
-	public static void main(String[] args) {
-		Scanner scanner = new Scanner(System.in);
+	 public static void main(String[] args) {
+	        Scanner scanner = new Scanner(System.in);
+	        int a, b, c;
+	        String mensagem = "";
+	        
+	        a = 1;
+	        b = 2;
+	        c = 3;
 
-		String entrada = scanner.nextLine();
-		String[] partes = entrada.split(",");
+	        // Verifica se é possível formar um triângulo
+	        if (a < b + c && b < a + c && c < a + b) {
+	            // Verifica o tipo de triângulo
+	            if (a == b && b == c) {
+	                mensagem = "Equilátero";
+	            } else if (a == b || b == c || a == c) {
+	                mensagem = "Isósceles";
+	            } else {
+	                mensagem = "Escaleno";
+	            }
+	        } else {
+	            mensagem = "Não é possível formar um triângulo";
+	        }
 
-		String data = partes[0];
-		String hora = partes[1];
-		String descricao = partes[2];
-		double valor = Double.parseDouble(partes[3]);
+	        // Exibe a mensagem
+	        System.out.println("Mensagem: " + mensagem);
+	        
+	        a = 3;
+	        b = 4;
+	        c = 5;
 
-		Transacao t = new Transacao(data, hora, descricao, valor);
-		t.imprimir();
-	}
-}
+	        // Verifica se é possível formar um triângulo
+	        if (a < b + c && b < a + c && c < a + b) {
+	            // Verifica o tipo de triângulo
+	            if (a == b && b == c) {
+	                mensagem = "Equilátero";
+	            } else if (a == b || b == c || a == c) {
+	                mensagem = "Isósceles";
+	            } else {
+	                mensagem = "Escaleno";
+	            }
+	        } else {
+	            mensagem = "Não é possível formar um triângulo";
+	        }
 
-class Transacao {
-	private String data;
-	private String hora;
-	private String descricao;
-	private double valor;
+	        // Exibe a mensagem
+	        System.out.println("Mensagem: " + mensagem);
+	        
+	        a = 2;
+	        b = 2;
+	        c = 4;
 
-	public Transacao(String data, String hora, String descricao, double valor) {
-		this.data = data;
-		this.hora = hora;
-		this.descricao = descricao;
-		this.valor = valor;
-	}
+	        // Verifica se é possível formar um triângulo
+	        if (a < b + c && b < a + c && c < a + b) {
+	            // Verifica o tipo de triângulo
+	            if (a == b && b == c) {
+	                mensagem = "Equilátero";
+	            } else if (a == b || b == c || a == c) {
+	                mensagem = "Isósceles";
+	            } else {
+	                mensagem = "Escaleno";
+	            }
+	        } else {
+	            mensagem = "Não é possível formar um triângulo";
+	        }
 
-	public void imprimir() {
-		System.out.println(this.descricao);
-		System.out.println(this.data);
-		System.out.println(this.hora);
-		System.out.printf("%.2f", this.valor);
-	}
+	        // Exibe a mensagem
+	        System.out.println("Mensagem: " + mensagem);
+	        
+	        a = 4;
+	        b = 4;
+	        c = 4;
+
+	        // Verifica se é possível formar um triângulo
+	        if (a < b + c && b < a + c && c < a + b) {
+	            // Verifica o tipo de triângulo
+	            if (a == b && b == c) {
+	                mensagem = "Equilátero";
+	            } else if (a == b || b == c || a == c) {
+	                mensagem = "Isósceles";
+	            } else {
+	                mensagem = "Escaleno";
+	            }
+	        } else {
+	            mensagem = "Não é possível formar um triângulo";
+	        }
+
+	        // Exibe a mensagem
+	        System.out.println("Mensagem: " + mensagem);
+	        
+	        a = 5;
+	        b = 3;
+	        c = 3;
+
+	        // Verifica se é possível formar um triângulo
+	        if (a < b + c && b < a + c && c < a + b) {
+	            // Verifica o tipo de triângulo
+	            if (a == b && b == c) {
+	                mensagem = "Equilátero";
+	            } else if (a == b || b == c || a == c) {
+	                mensagem = "Isósceles";
+	            } else {
+	                mensagem = "Escaleno";
+	            }
+	        } else {
+	            mensagem = "Não é possível formar um triângulo";
+	        }
+
+	        // Exibe a mensagem
+	        System.out.println("Mensagem: " + mensagem);
+	        
+	    }
 }
